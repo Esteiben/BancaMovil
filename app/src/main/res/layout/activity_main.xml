@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/TitleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="44dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/logo_bancamovil" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="BANCO PICHINCHA"
+            android:textAlignment="center"
+            android:textColor="#0A2759"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Versión: 9.5.0"
+        app:layout_constraintEnd_toEndOf="@+id/TitleLayout"
+        app:layout_constraintStart_toStartOf="@+id/TitleLayout"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLayout" />
+
+    <ImageView
+        android:id="@+id/ivCenterImage"
+        android:layout_width="377dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvVersion"
+        app:layout_constraintStart_toStartOf="@+id/tvVersion"
+        app:layout_constraintTop_toBottomOf="@+id/tvVersion"
+        app:srcCompat="@drawable/central_view" />
+
+    <TextView
+        android:id="@+id/tvFooterImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Cuida tus contraseñas, no las compartas con nadie"
+        android:textColor="#0A2758"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivCenterImage"
+        app:layout_constraintStart_toStartOf="@+id/ivCenterImage"
+        app:layout_constraintTop_toBottomOf="@+id/ivCenterImage" />
+
+    <LinearLayout
+        android:id="@+id/ButtonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/tvFooterImagen"
+        app:layout_constraintStart_toStartOf="@+id/tvFooterImagen"
+        app:layout_constraintTop_toBottomOf="@+id/tvFooterImagen">
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="120dp"
+            android:layout_height="99dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:drawableTop="@drawable/person_icon"
+            android:drawableTint="#0A2758"
+            android:drawingCacheQuality="high"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Usuario y contraseña"
+            android:textColor="#0A2758"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btnHuella"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="120dp"
+            android:layout_height="99dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableTop="@drawable/fingerprint_icon"
+            android:drawableTint="#0A2758"
+            android:fontFamily="@font/montserrat_medium"
+            android:insetLeft="10dp"
+            android:text="Huella / Face ID"
+            android:textColor="#0A2758"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btnUserPass"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="120dp"
+            android:layout_height="99dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableTop="@drawable/more_horiz_icon"
+            android:drawableTint="#0A2758"
+            android:fontFamily="@font/montserrat_medium"
+            android:insetLeft="10dp"
+            android:text="Pin de 6 dígitos"
+            android:textColor="#0A2758"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinksLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/ButtonsLayout"
+        app:layout_constraintStart_toStartOf="@+id/ButtonsLayout"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonsLayout">
+
+        <TextView
+            android:id="@+id/tvUbi"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:drawableTop="@drawable/location_on_icon"
+            android:drawableTint="#4185C2"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Ubícanos"
+            android:textAlignment="center"
+            android:textColor="#4185C2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvClave"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:drawableTop="@drawable/key_icon"
+            android:drawableTint="#4185C2"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Clave Digital"
+            android:textAlignment="center"
+            android:textColor="#4185C2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCall"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:drawableTop="@drawable/phone_enabled_icon"
+            android:drawableTint="#4185C2"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Llámanos"
+            android:textAlignment="center"
+            android:textColor="#4185C2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="¿Ingresar con otro usuario?"
+        android:textColor="#4185C2"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/LinksLayout"
+        app:layout_constraintStart_toStartOf="@+id/LinksLayout"
+        app:layout_constraintTop_toBottomOf="@+id/LinksLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
