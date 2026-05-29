@@ -5,8 +5,8 @@
 Este proyecto consiste en el desarrollo de una interfaz de inicio de sesión responsiva para una aplicación móvil inspirada en la App del Banco Pichincha, realizada en Android Studio utilizando Material Design 3.
 
 El objetivo principal es recrear una experiencia visual moderna, limpia y adaptable a diferentes tamaños de pantalla, aplicando principios de diseño responsivo y buenas prácticas de desarrollo móvil en Android.
-
-<img width="1080" height="2294" alt="Screenshot_BancaMovil" src="https://github.com/user-attachments/assets/f074a80c-c3a6-460d-a716-07e86f2ab2f8" />
+---
+<img width="1080" height="2400" alt="Screenshot_20260529_012904" src="https://github.com/user-attachments/assets/e4a6690c-3b8e-4c81-a63e-2578b9f18945" />
 
 ---
 
